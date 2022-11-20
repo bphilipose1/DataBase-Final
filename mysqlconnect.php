@@ -11,6 +11,19 @@ $conn = mysqli_connect($servername, $username, $password);
 if(!$conn) {
     die("Connection failed: ".mysqli_connec_error());
 }
-echo "Connection successfully";
+
+$sql = "select * from User"; //pull sql request from previous page here
+    
+if(mysqli_query($conn, $sql)){
+
+    //make table here
+
+} else {
+
+    echo "Error with SQL Query";
+
+}
+
+mysqli_close($conn);
 
 ?>
