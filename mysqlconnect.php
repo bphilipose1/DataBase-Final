@@ -12,7 +12,7 @@ if(!$conn) {
     die("Connection failed: ".mysqli_connec_error());
 }
 
-$sql = "select * from User"; //pull sql request from previous page here
+$sql = $_GET['query']; //pull sql request from previous page here
 $result = mysqli_query($conn, $sql);
     
 if(mysqli_num_rows($result) > 0){
