@@ -1,0 +1,217 @@
+
+header	{
+	background-color: rgb(1,48,63);
+	background-image: url('2ndary.jpg');
+	font-family: 'Mate SC', serif;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-transform:uppercase;
+	font-size: 75px;
+	color:white;
+	
+	text-align: center;
+	padding: 75px 10px;
+	margin: 10px 10px 0px;
+	border:3.5px solid black;
+	border-radius:  25px;
+}
+
+/* styling the navigation main top bar */
+
+.navbar {
+    background-color: rgb(2,87,122);
+    text-align:center;
+
+    border-right: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    border-radius: 0px 0px 25px 25px;
+    padding: 1px;
+    margin: 0px 40px;
+}
+
+.navbar a { 
+color:white; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-decoration:none;
+}
+
+.navbar a:link{
+ font-family: "Times New Roman", Times, serif;
+ font-weight:bold;
+  color:white;
+  font-size:25px;
+    text-align:center;
+    text-decoration:none;
+
+padding: 16px;
+    border:none;
+    margin: 0 12px;
+    border-radius:25px;
+        
+    display:block;        
+}
+/* drop-down menu */
+.dropbtn {
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	color:white;
+	font-size:25px;
+
+	border: none;
+	border-radius:25px;
+	background-color: inherit;
+	padding: 16px;
+}
+
+/* positioning the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: rgb(2,87,122);
+  border:.5px solid black;
+  border-radius:25px;
+  z-index: 1;
+  display: none;
+  position: absolute;
+  
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #ffed99;
+color:black;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: #ffed99;
+color:black;
+}
+/* changes nav links when hovering */
+.navbar a:hover {
+    color:black;
+    background-color: #ffed99;
+    
+}
+/* sets up nav li elements display */
+.navbar li {
+display:inline-block;
+}
+
+body	{
+	width:1500px;
+	margin: 10px auto;
+
+	background-image: url('Hompage-computer-backgorund.jfif');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content-container	{
+
+	
+	padding:10px;
+	border:3.5px solid black;
+	border-radius: 25px;
+	margin: 5px;
+	
+	background-color: rgb(137,214,251);
+	justify-content:center;
+	display: grid;
+	grid-template-columns: auto auto;
+	
+}
+
+.box	{
+	text-align:center;
+	background: rgba(255, 255, 255, 0.5);
+	
+	padding:10px;
+	
+	min-height: 500px;
+	min-width: 400px;
+	padding: 10px;
+	border:.05px solid black;
+	border-radius: 25px;
+	margin: 5px;
+}
+
+footer	{
+	font-size: 16px;
+	text-align:center;
+	padding: 10px;
+	border:1.5px solid black;
+	border-radius: 25px;
+	margin: 10px;
+
+	
+	background-color: rgb(1,48,63);
+	display:flex;
+	flex-direction: column;
+}
+
+#copyright	{
+	text-align:right;
+	color: white;
+}
+
+p	{
+	text-align: left;
+	font-size:24px;
+	line-height: 2;
+	padding:12px 60px;
+	font-family: 'Baloo Tammudu 2', cursive;
+}
+
+img	{
+	border: 1.75px solid black;
+	border-radius:25px;
+	margin:5px;
+}
+
+
+
+h1	{
+	font-family: bold;
+	font-size:70px;
+	text-align: center;
+	text-decoration:underline;
+	font-family: 'Mate SC', serif;
+}
+
+h2	{
+	font-family: bold;
+	font-size:40px;
+	font-family: 'Mate SC', serif;
+}
+
+h3	{
+	font-family: fantasy;
+	font-size:25px;
+	font-family: 'Mate SC', serif;
+}
+
+.mini-header	{
+	text-align:center;
+	text-decoration:underline;
+	font-family: 'Mate SC', serif;
+	}
