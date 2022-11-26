@@ -31,7 +31,7 @@ if (mysqli_num_rows($result) > 0) {
 		<td>{$row['User_ID']}</td>
 		<td>{$row['Length']}</td>
 		<td>{$row['Width']}</td>
-		<td>{$row['Media_type']}</td>
+		<td>{$row['Media_Type']}</td>
 		<tr>";
   }
 } else {
