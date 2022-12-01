@@ -11,7 +11,7 @@ die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully.<br>";
 
-$sql = 'SELECT * FROM Media';
+$sql = 'SELECT Media.Media_ID, Media_Type, Comment_ID, Comment_Content, Date_Posted FROM Comments INNER JOIN Media ON Comments.Media_ID = Media.Media_ID';
 $result = mysqli_query($conn, $sql);
 
 echo"<table border = '1'>";
