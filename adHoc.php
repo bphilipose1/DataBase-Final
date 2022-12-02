@@ -15,7 +15,7 @@ if(!$conn){
 
 $sql = $_POST["query"];
 $result = mysqli_query($conn, $sql);
-$tables = "<table border> = '1'";
+$tables = "<table border>";
 
 $index =  strpos($sql, " ");
 
