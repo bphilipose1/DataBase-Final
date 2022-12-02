@@ -27,7 +27,6 @@ $delete = 'delete';
 
 $new = strtolower($new);
 if (strcmp($new, $select) == 0){
-    echo "test";
     if(mysqli_num_rows($result) > 0){
         echo "$bcolor";
         echo "$tables";
@@ -40,7 +39,7 @@ if (strcmp($new, $select) == 0){
         }
         echo "</table>\n";
     }else{
-        echo "0 results";
+        echo "No data returned from select statement.";
     }
 }else if (strcmp($new, $update) == 0){
     echo "$bcolor";
@@ -54,7 +53,7 @@ if (strcmp($new, $select) == 0){
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo "Error inserting record: " . $sql . "<br>" . mysqli_error($conn);
     }
 
 }else if (strcmp($new, $delete) == 0){
@@ -62,11 +61,11 @@ if (strcmp($new, $select) == 0){
     if (mysqli_query($conn, $sql)) {
         echo "Deleted correctly.";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo "Error deleting record: " . $sql . "<br>" . mysqli_error($conn);
     }
 }else {
     echo "$bcolor";
-    echo "Sorry, please input a query that has select, insert, update, or delete";
+    echo "Please input a proper SQL query: select, update, insert, or delete.";
 }
 
 
