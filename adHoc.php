@@ -17,7 +17,6 @@ $sql = $_POST["query"];
 $result = mysqli_query($conn, $sql);
 $tables = "<table border> = '1'";
 
-
 $index =  strpos($sql, " ");
 
 $new = substr($_POST["query"], 0, $index);
