@@ -107,9 +107,6 @@
             </tr>
             <tr>
             <td align="right">
-                <input value="Clear" type="reset">
-            </td>
-            <td align="right">
             <input value="Clear" type="reset">
             </td>
             <td>
