@@ -94,7 +94,30 @@
     <content class="content-container">
         <div id="miniexp">
 			<div class="mini-header" style="font-size:40px;">MySQL output</div>
-            <?php include ".php"?>
+            
+        <form method="POST" action="adHoc.php" target="_self">
+        <table>
+            <tbody><tr>
+            <td align="right">
+                <strong>Please enter your query here<br></strong>
+            </td>
+            <td>
+                <input size="30" name="query" type="text">
+            </td>
+            </tr>
+            <tr>
+            <td align="right">
+                <input value="Clear" type="reset">
+            </td>
+            <td align="right">
+            <input value="Clear" type="reset">
+            </td>
+            <td>
+            <input value="Submit" type="submit">
+          </td>
+            </tr>
+        </tbody></table>
+        </form>
         </div>
     </content>
 </div>
